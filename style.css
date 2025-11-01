@@ -1,30 +1,66 @@
 /* Root typography settings */
-html{
-/*   set the following properties: 
+html {
+  /*   set the following properties: 
   font-size - this will be the base font size for the site
   font-family - this will be the base font-family for the site
   line-height - base line height, generally should be in the range 1.5-1.8 
   color- primary text color for the site
   background-color - primary background color for the site */
-
-  
+  font-size: 13pt;
+  line-height: 1.69;
+  color: black;
+  background-color: aliceblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* General heading styles */
-h1, h2, h3, h4, h5, h6{
-  set font styles for all of your headings, for example font-weight, line-height, font-family
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /*set font styles for all of your headings, for example font-weight, line-height, font-family*/
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #002244;
+  /* deep blue for contrast */
+
 }
 
 /* Specific element text styles */
-h1{
+h1 {
   /*   this is the page title */
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
 }
 
-h2{
-  
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
-p{
+p {
+  max-width: 65ch;
+  /* keeps text line length readable */
+  margin-bottom: 1rem;
+  /* optional but usually good to have a space between paragraphs */
+}
 
-  margin-bottom: 1rem; /* optional but usually good to have a space between paragraphs */
+ul {
+  margin: 1rem 0 1rem 1.5rem;
+  padding-left: 1rem;
+  list-style-type: square;
+}
+
+
+li {
+  margin-bottom: 0.4rem;
+  /* space between list items */
+  line-height: 1.6;
 }
